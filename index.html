@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="DiffDoctor">
+  <meta name="keywords" content="Generative Models, Diffusion Models">
+  <title>DiffDoctor</title>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/logo.jpg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            <!-- <img src="./static/images/logo.jpg" alt="图标描述" style="width: 80px; height: 80px; vertical-align: middle; margin-right: 0px; position: relative; top: -8px;"> -->
+            DiffDoctor: Diagnosing Image Diffusion Models Before Treating
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=nKr8TJwAAAAJ&hl=en">Yiyang Wang</a><sup>1</sup></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              <a href="https://xavierchen34.github.io/">Xi Chen</a><sup>1</sup></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              <a href="https://xuxiaogang.com">Xiaogang Xu</a><sup>4</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=a6GxOZgAAAAJ">Sihui Ji</a><sup>1</sup></a>&nbsp</a>&nbsp    
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=8zksQb4AAAAJ&view_op=list_works&sortby=pubdate">Yu Liu</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://shenyujun.github.io/">Yujun Shen</a><sup>3</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://hszhao.github.io/">Hengshuang Zhao</a><sup>1</sup>  
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>2</sup>Tongyi Lab</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>3</sup>Ant Financial Services Group</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>4</sup>Zhejiang University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=   "https://arxiv.org/abs/2406.07547"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Coming)</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://huggingface.co/spaces/xichenhku/MimicBrush"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Demo</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtu.be/1CgpvGxL7uU"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ali-vilab/MimicBrush"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (to do)</span>
+                  </a>
+              </span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="image-area" style="text-align: center;">
+          <img src="./DIffDoctor/teaser.jpg" alt="pipeline" width="75%" >
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Image diffusion models inevitably generate <strong>artifacts</strong>. We train a robust artifact detector to <strong>diagnose</strong> the artifacts and <strong>treat</strong> the diffusion model. After treating on limited prompts, the diffusion model generates fewer artifacts of similar types on unseen prompts while maintaining the quality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Video Introduction</h2>
+        <video class="video-center" controls muted playsinline>
+          <source src="https://cloud.video.taobao.com/vod/play/L1dkNDd4QjJUdkI/dVFMbzJCYW9XWXpPMmtiTXlCWVJxQ01iTnI3QnNWUzZQZWw1SnpKVVVCTlh4OVFON0V5UUVMUDduY1RJak82VE1sdXdHTjNOaHc9PQ" type="video/mp4" class="video_style">
+        </video>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Diagnose: Detect Artifacts</h2>
+        <div style="margin-top: 30px; text-align: center;">
+          <img src="./DIffDoctor/artifacts.jpg" alt="PartComp" width="100%">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We compare our best artifact detector with the artifact detector trained on previous
+            data (Prev.). The input images contain real photos, images synthesized by SD1.5, and images synthesized by FLUX.1.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Treat: Tune Diffusion Models</h2>
+        <div style="margin-top: 30px; text-align: center;">
+          <img src="./DIffDoctor/treat.jpg" alt="texture" width="80%">
+        </div>
+        <p>
+          DiffDoctor on FLUX.1. All images are synthesized based on randomly generated unseen prompts not involved in training, and
+          on the same seeds for the corresponding images before and after DiffDoctor. After treating, artifacts in images are reduced, but the
+          content and layouts of the images are almost unchanged, demonstrating the effectiveness of pixel-aware treating.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">DiffDoctor on DreamBooth</h2>
+        <div style="margin-top: 30px; text-align: center;">
+          <img src="./DIffDoctor/dreambooth.jpg" alt="texture" width="80%">
+        </div>
+        <p style="text-align: center;">We perform DiffDoctor
+          on the instance prompt and evaluate other various prompts following DreamBooth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">DiffDoctor vs Hand-Fix LoRA</h2>
+        <div style="margin-top: 30px; text-align: center;">
+          <img src="./DIffDoctor/hands.jpg" alt="texture" width="80%">
+        </div>
+        <p style="text-align: center;">We compare DiffDoctor with Hands-XL on the same prompts and seeds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In spite of the recent progress, image diffusion models
+            still produce artifacts. A common solution is to refine
+            an established model with a quality assessment system,
+            which generally rates an image in its entirety. In this
+            work, we believe problem-solving starts with identification,
+            yielding the request that the model should be aware of not
+            just the presence of defects in an image, but their specific
+            locations. Motivated by this, we propose DiffDoctor,
+            a two-stage pipeline to assist image diffusion models in
+            generating fewer artifacts. Concretely, the first stage
+            targets developing a robust artifact detector, for which we
+            collect a dataset of over 1M flawed synthesized images and
+            set up an efficient human-in-the-loop annotation process,
+            incorporating a carefully designed class-balance strategy.
+            The learned artifact detector is then involved in the second
+            stage to tune the diffusion model through assigning a
+            per-pixel confidence map for each synthesis. Extensive
+            experiments on text-to-image diffusion models demonstrate
+            the effectiveness of our artifact detector as well as the
+            soundness of our diagnose-then-treat design.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section> 
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: center;">Overall Pipeline</h2>
+        <div class="image-area">
+          <img src="./DIffDoctor/pipe.jpg" alt="Overall Pipeline" width="100%">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Pipeline of DiffDoctor. The first part shows the training of an artifact detector – the doctor. Starting with the initial dataset,
+            the artifact detector is trained in a humans-in-a-loop manner. The second part shows our diagnose-then-treat design, where the patient – a
+            trainable diffusion model, is prompted to synthesize images. Then the frozen artifact detector diagnoses its result by predicting the artifact
+            maps, on which it treats the patient by minimizing the per-pixel artifact confidence to back-propagate to the diffusion model.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      <!-- @article{chen2024MimicBrush,
+      title={Zero-shot Image Editing with Reference Imitation},
+      author={Chen, Xi and Feng, Yutong and Chen, Mengting and Wang, Yiyang and Zhang, Shilong and Liu, Yu and Shen, Yujun and Zhao, Hengshuang},
+      journal={arXiv preprint arXiv:2406.07547},
+      year={2024}
+    } -->
+  </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2406.07547">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ali-vilab/MimicBrush" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
